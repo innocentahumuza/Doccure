@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  /* font-family: "Roboto", sans-serif; */
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px;
+  margin: 0;
+  padding-bottom: 5px;
+  align-items: center;
+}
+
+.bar-show {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-bar-left {
+  font-size: 2rem;
+  color: #10defd;
+  cursor: pointer;
+}
+
+.logo {
+  padding-left: 70px;
+  cursor: pointer;
+  padding-right: 0;
+  margin-right: 0;
+  padding-top: 10px;
+}
+
+.logo img {
+  width: 80%;
+}
+
+.nav-bar .pages {
+  display: none;
+  justify-content: space-between;
+  width: 650px;
+  padding-right: 100px;
+}
+
+div.pages > * {
+    cursor: pointer;
+    color: #2e3842;
+}
+
+div.pages > *:hover {
+    color: hsl(140, 100%, 45%);
+}
+
+.pages div i {
+    color: darkgray;
+}
+
+.pages div:hover {
+    color: hsl(140, 100%, 45%);
+}
+
+.pages .active {
+    color: #10defd;
+}
+
+.nav-bar .profile {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 20px;
+}
+
+.nav-bar .profile .contact {
+  display: none;
+  padding-right: 40px;
+}
+
+.nav-bar .profile .contact .far {
+    font-size: 1.8rem;
+    color: darkgray;
+  }
+
+.nav-bar .profile .contact .contact-number {
+    margin-top: -7px;
+    padding-left: 6px;
+}
+
+.nav-bar .profile .contact .contact-number p {
+    font-size: .8em;
+    margin: 0;
+  }
+
+.nav-bar .profile .profile-person {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.nav-bar .profile .profile-person img {
+  border-radius: 50%;
+  width: 30px;
+}
+
+.nav-bar .profile .profile-person .fa-solid {
+  padding-left: 10px;
+  color: darkgray;
+}
+
+/* Screen Responsiveness */
+@media only screen and (min-width: 550px) {
+  .nav-bar .profile .profile-person {
+    display: flex;
+  }
+
+  .logo {
+    padding-left: 20px;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .nav-bar .pages {
+    display: flex;
+  }
+
+  .logo {
+    padding-left: 10px;
+  }
+
+  .nav-bar-left {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+    .nav-bar .profile .contact {
+        display: flex;
+      }
+}
+
+.chat-title {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
+}

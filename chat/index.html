@@ -4,32 +4,59 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Chat</title>
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
       rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+      integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="assets/css/index.css" />
   </head>
 
   <body>
     <div class="nav-bar">
-      <div class="logo"></div>
-      <div class="links">
-        <a href="#">Home<i class="ri-arrow-drop-down-line"></i></a>
-        <a href="#">Doctors<i class="ri-arrow-drop-down-line"></i></a>
-        <a href="#">Patients<i class="ri-arrow-drop-down-line"></i></a>
-        <a href="#">Pharmacy<i class="ri-arrow-drop-down-line"></i></a>
-        <a href="#">Pages<i class="ri-arrow-drop-down-line"></i></a>
-        <a href="#">Blog<i class="ri-arrow-drop-down-line"></i></a>
-        <a href="#">Admin<i class="ri-arrow-drop-down-line"></i></a>
-        <div class="profile">
-          <div class="contact">Contact<br />+256740639860</div>
-          <div class="profile-person">
-            <img src="assets/img/doctor-thumb.jpg" alt="Doctor image" />
-            <i class="ri-arrow-drop-down-line"></i>
+      <div class="bar-show">
+        <div class="nav-bar-left">
+          <i class="fa-sharp fa-solid fa-bars-staggered"></i>
+        </div>
+        <div class="logo">
+          <img src="assets/img/logo.png" alt="logo" />
+        </div>
+      </div>
+      <div class="pages">
+        <div>Home <i class="fa-solid fa-caret-down"></i></div>
+        <div class="active">Doctors <i class="fa-solid fa-caret-down"></i></div>
+        <div>Patients <i class="fa-solid fa-caret-down"></i></div>
+        <div>Pharmacy <i class="fa-solid fa-caret-down"></i></div>
+        <div>Pages <i class="fa-solid fa-caret-down"></i></div>
+        <div>Blog <i class="fa-solid fa-caret-down"></i></div>
+        <div>Admin <i class="fa-solid fa-caret-down"></i></div>
+      </div>
+      <div class="profile">
+        <div class="contact">
+          <div><i class="far fa-hospital"></i></div>
+          <div class="contact-number">
+            <p>Contact</p>
+            <div>+256740639860</div>
           </div>
         </div>
+        <div class="profile-person">
+          <div>
+            <img src="assets/img/doctor-thumb.jpg" alt="Doctor image" />
+          </div>
+          <div>
+            <i class="fa-solid fa-caret-down"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+    <hr />
+    <div class="chat-title">
+      <div class="title">Chats</div>
+      <div class="icon">
+        <i class="fa-regular fa-circle-plus"></i>
       </div>
     </div>
   </body>
